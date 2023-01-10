@@ -9,7 +9,9 @@ public class ConnectFour {
     private int LOWER_BOUND;
     private int UPPER_BOUND;
     private boolean whoTurn = true;
-
+    String[][] newArray = new String[6][7];
+    String[][] board = ((""+""+""+""+""+""+"");
+    
     public ConnectFour() {
         System.out.println("--Use the playConnectFour method to begin game--");
         System.out.println("-- 0 represents an empty spot -- 1 represents player1's tiles -- 2 represents player2's tiles --");
@@ -55,7 +57,7 @@ public class ConnectFour {
                     System.out.println("please input a number between 1 - 7");
                 } else {
                     this.placeTile = true;
-                    
+
                     while (placeTile == true) {
                         if (whoTurn == true) {
                             if (scannerInput == 1) {
@@ -80,7 +82,7 @@ public class ConnectFour {
                                 else {
                                     System.out.println("-- row 1 is already filled, player1's turn has been skipped --");
                                 }
-                                
+
                                 this.placeTile = false;
                             }
                             if (scannerInput == 2) {
@@ -105,7 +107,7 @@ public class ConnectFour {
                                 else {
                                     System.out.println("-- row 2 is already filled, player1's turn has been skipped --");
                                 }
-                                
+
                                 this.placeTile = false;
                             }
                             if (scannerInput == 3) {
@@ -130,7 +132,7 @@ public class ConnectFour {
                                 else {
                                     System.out.println("-- row 3 is already filled, player1's turn has been skipped --");
                                 }
-                                
+
                                 this.placeTile = false;
                             }
                             if (scannerInput == 4) {
@@ -155,7 +157,7 @@ public class ConnectFour {
                                 else {
                                     System.out.println("-- row 4 is already filled, player1's turn has been skipped --");
                                 }
-                                
+
                                 this.placeTile = false;
                             }
                             if (scannerInput == 5) {
@@ -180,7 +182,7 @@ public class ConnectFour {
                                 else {
                                     System.out.println("-- row 5 is already filled, player1's turn has been skipped --");
                                 }
-                                
+
                                 this.placeTile = false;
                             }
                             if (scannerInput == 6) {
@@ -205,7 +207,7 @@ public class ConnectFour {
                                 else {
                                     System.out.println("-- row 6 is already filled, player1's turn has been skipped --");
                                 }
-                                
+
                                 this.placeTile = false;
                             }
                             if (scannerInput == 7) {
@@ -230,12 +232,11 @@ public class ConnectFour {
                                 else {
                                     System.out.println("-- row 7 is already filled, player1's turn has been skipped --");
                                 }
-                                
+
                                 this.placeTile = false;
                             }
                         }
-                        
-                        
+
                         
                         if (whoTurn == false) {
                             if (scannerInput == 1) {
@@ -260,7 +261,7 @@ public class ConnectFour {
                                 else {
                                     System.out.println("-- row 1 is already filled, player2's turn has been skipped --");
                                 }
-                                
+
                                 this.placeTile = false;
                             }
                             if (scannerInput == 2) {
@@ -285,7 +286,7 @@ public class ConnectFour {
                                 else {
                                     System.out.println("-- row 2 is already filled, player2's turn has been skipped --");
                                 }
-                                
+
                                 this.placeTile = false;
                             }
                             if (scannerInput == 3) {
@@ -310,7 +311,7 @@ public class ConnectFour {
                                 else {
                                     System.out.println("-- row 3 is already filled, player2's turn has been skipped --");
                                 }
-                                
+
                                 this.placeTile = false;
                             }
                             if (scannerInput == 4) {
@@ -335,7 +336,7 @@ public class ConnectFour {
                                 else {
                                     System.out.println("-- row 4 is already filled, player2's turn has been skipped --");
                                 }
-                                
+
                                 this.placeTile = false;
                             }
                             if (scannerInput == 5) {
@@ -360,7 +361,7 @@ public class ConnectFour {
                                 else {
                                     System.out.println("-- row 5 is already filled, player2's turn has been skipped --");
                                 }
-                                
+
                                 this.placeTile = false;
                             }
                             if (scannerInput == 6) {
@@ -385,7 +386,7 @@ public class ConnectFour {
                                 else {
                                     System.out.println("-- row 6 is already filled, player2's turn has been skipped --");
                                 }
-                                
+
                                 this.placeTile = false;
                             }
                             if (scannerInput == 7) {
@@ -410,7 +411,7 @@ public class ConnectFour {
                                 else {
                                     System.out.println("-- row 7 is already filled, player2's turn has been skipped --");
                                 }
-                                
+
                                 this.placeTile = false;
                             }
                         }
@@ -419,8 +420,7 @@ public class ConnectFour {
                         } else if (whoTurn == true) {
                             whoTurn = false;
                         }
-                        
-                        
+
                     }
                     System.out.println("|" + gameboard[5][0] + "|" + gameboard[5][1] + "|" + gameboard[5][2] + "|" + gameboard[5][3] + "|" + gameboard[5][4] + "|" + gameboard[5][5] + "|" + gameboard[5][6] + "|");
                     System.out.println("|" + gameboard[4][0] + "|" + gameboard[4][1] + "|" + gameboard[4][2] + "|" + gameboard[4][3] + "|" + gameboard[4][4] + "|" + gameboard[4][5] + "|" + gameboard[4][6] + "|");
