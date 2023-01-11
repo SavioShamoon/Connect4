@@ -10,7 +10,17 @@ public class ConnectFour {
     private int UPPER_BOUND;
     private boolean whoTurn = true;
     String[][] newArray = new String[6][7];
-    String[][] board = ((""+""+""+""+""+""+"");
+    String[][] string2DArray = new String[6][7];
+    private String[][] grid = {
+        {"","","","","","",""},
+        {"","","","","","",""},
+        {"","","","","","",""},
+        {"","","","","","",""},
+        {"","","","","","",""},
+        {"","","","","","",""}
+        
+    };
+    
     
     public ConnectFour() {
         System.out.println("--Use the playConnectFour method to begin game--");
