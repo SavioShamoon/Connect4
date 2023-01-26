@@ -3,6 +3,8 @@ import java.util.InputMismatchException;
 public class ConnectFour {
     private String[][] gameboard = new String[6][7];
     private Scanner scanner = new Scanner(System.in);
+    private String[][] Gameboard = new String[10][10];
+    private Scanner Scanner = new Scanner(System.in);
     private int scannerInput;
     private int scannerVariable;
     private boolean gameIsRunning;
@@ -100,8 +102,7 @@ public class ConnectFour {
                                 }
                             }
                         }
-                        
-                        
+
                     }
                 }
             } catch (InputMismatchException error) {
@@ -173,7 +174,7 @@ public class ConnectFour {
                                 }
                             }
                         }
-                        
+
                     }
                 }
             } catch (InputMismatchException error) {
@@ -181,5 +182,27 @@ public class ConnectFour {
                 scanner.next();
             }
         }
+    }
+
+    public void playConnect10() {
+        for (int i = 1; i < 10; i++) {
+            gameboard[1][i] = " ";
+            gameboard[2][i] = " ";
+            gameboard[3][i] = " ";
+            gameboard[4][i] = " ";
+            gameboard[5][i] = " ";
+            gameboard[6][i] = " ";
+            gameboard[7][i] = " ";
+            gameboard[8][i] = " ";
+            gameboard[9][i] = " ";
+            gameboard[10][i] = " ";
+        }
+           this.gameIsRunning = true;
+
+        for (int i = 10; i >= 1; i--) {
+            System.out.println("| "+gameboard[i][1]+" | "+gameboard[i][2]+" | "+gameboard[i][3]+" | "+gameboard[i][4]+" | "+gameboard[i][5]+" | "+gameboard[i][6]+" | "+gameboard[i][7]+" |" + gameboard[i][8]+" |" + gameboard[i][9]+" |" + gameboard[i][10]+" |");
+        }
+        System.out.println("");
+        System.out.println("- "+"1"+" - "+"2"+" - "+"3"+" - "+"4"+" - "+"5"+" - "+"6"+" - "+"7"+" -" +"8"+" -"+"9"+" -"+"10"+" -");
     }
 }
